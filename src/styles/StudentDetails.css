@@ -1,0 +1,87 @@
+
+/* style.css */
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+  }
+  
+  .content {
+    margin-top: 20px; /* Adjust margin as needed */
+    width: 100%;
+    max-width: 800px; /* Adjust maximum width as needed */
+    
+  }
+  table{
+    text-align: center;
+  }
+  
+   table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+    padding: 0px;
+  }
+  
+  th, td {
+    padding: 0px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+   
+  .remarks {
+    margin-top: 20px;
+  }
+  
+  .text-editor {
+    margin-top: 20px;
+  }
+  
+
+
+  /* Navigation CSS */
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* Update with your desired background color */
+  }
+  
+  .logo {
+    width: 50px; /* Adjust the width of the logo as needed */
+    height: auto;
+  }
+  
+  .avatar {
+    width: 30px; /* Adjust the width of the avatar as needed */
+    height: 30px; /* Adjust the height of the avatar as needed */
+    margin-right: 5px; /* Adjust the margin to position the avatar */
+  }
+  
+  .navbar-brand {
+    padding: 5px 0; /* Adjust padding to vertically center the logo */
+  }
+  
+  .dropdown-toggle {
+    color: #fff; /* Update with your desired text color */
+  }
+  
+  .dropdown-menu {
+    background-color: #343a40; /* Update with your desired dropdown menu background color */
+  }
+  
+  .dropdown-item {
+    color: #fff; /* Update with your desired dropdown item text color */
+  }
+  
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    background-color: #1e2124; /* Update with your desired dropdown item hover/focus background color */
+  }
+  

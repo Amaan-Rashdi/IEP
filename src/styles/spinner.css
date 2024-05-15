@@ -1,0 +1,56 @@
+/* General styling for the page when loading */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;  /* Fixed positioning to cover the viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;  /* Cover the full width of the viewport */
+  height: 100vh; /* Cover the full height of the viewport */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
+/* Spinner styles */
+.loader {
+  border: 6px solid #f3f3f3; /* Light grey for the inactive part of the spinner */
+  border-top: 6px solid #3498db; /* Blue for the active part of the spinner */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+/* Smaller border around the loader */
+.loader-border {
+  border: 2px solid black; /* Solid black border */
+  padding: 10px; /* Space between the spinner and the border */
+  border-radius: 50%; /* Rounded border */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: border-spin 2s linear infinite; /* Animating the border */
+}
+
+/* Border animation for changing colors */
+@keyframes border-spin {
+  0% { 
+      border-color: black;
+  }
+  50% {
+      border-color: white;
+  }
+  100% { 
+      border-color: black;
+  }
+}
+
+/* Keyframes for spinning the loader */
+@keyframes spin {
+  0% { 
+      transform: rotate(0deg);
+  }
+  100% { 
+      transform: rotate(360deg);
+  }
+}
